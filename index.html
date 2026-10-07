@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập Box Model</title>
+    <!-- Liên kết file CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Bài tập: Mô hình hộp CSS (Box Model)</h1>
+
+    <p class="note">
+      Mở <strong>Developer Tools (F12)</strong> → tab <strong>Computed</strong>
+      để kiểm tra kích thước thực tế của từng thẻ bên dưới.
+    </p>
+
+    <!-- Container chứa 3 thẻ -->
+    <div class="container">
+      <!-- Thẻ 1: content-box -->
+      <div class="card">
+        <h2>Thẻ 1</h2>
+        <p>box-sizing: <strong>content-box</strong></p>
+        <p>
+          Tổng kích thước = 280 + 40 (padding) + 10 (border) =
+          <strong>330px</strong>
+        </p>
+      </div>
+
+      <!-- Thẻ 2: border-box -->
+      <div class="card">
+        <h2>Thẻ 2</h2>
+        <p>box-sizing: <strong>border-box</strong></p>
+        <p>
+          Tổng kích thước = <strong>280px</strong> (đã bao gồm padding + border)
+        </p>
+      </div>
+
+      <!-- Thẻ 3: border-box -->
+      <div class="card">
+        <h2>Thẻ 3</h2>
+        <p>box-sizing: <strong>border-box</strong></p>
+        <p>
+          Tổng kích thước = <strong>280px</strong> (đã bao gồm padding + border)
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
